@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTH102</title>
+
+    <Script>
+        function basicCalculation (){
+            var n1 = parseFloat(document.getElementById('num1').value);
+            var n2 = parseFloat(document.getElementById("num2").value);
+            var res; 
+            var operation = document.getElementById("operator").value
+
+                if (operation === "+") {
+                    res = n1+n2 
+                }
+
+                if (operation === "-") {
+                    res = n1-n2 
+                }
+
+                if (operation === "*") {
+                    res = n1*n2 
+                }
+
+                if (operation === "/") {
+                    res = n1/n2 
+                 }
+            
+        document.getElementById("result").value = res.toFixed(3);
+     
+     }
+
+    </Script>
+
+    <style>
+
+        body {
+            background-image: url(m2.jpg);
+            background-size: cover;
+            
+        }
+
+        .calculator {
+            width: 600px;
+            height: 500px;
+            border-radius: 20px;
+            background-color: rgb(16, 83, 70);
+            padding: 50px;
+            margin: 50px;
+            padding-left: 120px;
+            padding-top: 5px;
+            color: rgb(251, 252, 249);
+           
+            
+            
+
+        }
+
+        .calculator h4 {
+            text-align: center;
+            font-size: 30px;
+            padding-top: 5px;
+
+        }
+
+        .calculator button{
+            background-color: rgb(255, 255, 253);
+        }
+
+        .calculator select{
+            background-color: rgb(255, 255, 255);
+        }
+        
+        
+
+       .re  {
+            font-size: 20px;
+
+       }
+       
+
+        
+
+
+    </style>
+
+</head>
+
+<body>
+    
+    <div class="calculator">
+
+    <h4>Basic calculator</h4>
+    <label for="">Number1</label>
+    <br>
+    <input type="text" name="" id="num1">
+
+    <select name="" id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+
+    <br>
+    <label for="">Number2</label>
+    <br>
+    <input type="text" name="" id="num2">
+    <br>
+    <label for="">Result</label>
+    <br>
+    <input type="text" name="" id="result" >
+    <button onclick="basicCalculation()"> Enter </button>
+
+    <b><i><h2>CALCULUS II</h2></i></b>
+
+    <h3 class="re">
+
+        เนื้อหา <br>
+        อุปนัยเชิงคณิตศาสตร์ <br>
+        ลำดับ <br>
+        อนุกรม <br>
+        อนุกรมกำลัง <br>
+        อนุกรมฟูเรียร์ <br>
+        เวกเตอร์ <br>
+        พิกัดเชิงขั้ว <br>
+        อิทิกรัลหลายชั้น <br>
+
+
+    </h3>
+        
+</div>
+
+
+</body>
+</html>
